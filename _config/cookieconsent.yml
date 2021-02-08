@@ -1,0 +1,17 @@
+---
+Name: cookieconsent
+---
+LeKoala\CookieConsent\CookieConsent:
+  # use local js or cdn js
+  use_cdn: false
+  # class name of your privacy page. leave blank for default
+  privacy_notice_class: 'PrivacyNoticePage'
+  opts:
+    # simple, headline, interstitial, standalone
+    notice_banner_type: "interstitial"
+    # implied, express => should really by express for GDPR
+    consent_type: "express"
+    # light, dark
+    palette: "dark"
+    # the selector for a link or button to open back the settings
+    change_preferences_selector: "#cookieconsent-preferences"
