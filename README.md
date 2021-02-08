@@ -21,7 +21,7 @@ The four types are :
 - tracking
 - targeting
 
-And they will be rendered in something like this. Please note the text/plain type that prevents the script for being executed.
+And they will be rendered in something like this. Please note the `text/plain` type that prevents the script for being executed.
 This is what you should do if you include your scripts manually.
 
 ```html
@@ -34,7 +34,7 @@ This is what you should do if you include your scripts manually.
 or for inline scripts
 
 ```html
-<script type="text/plain" cookie-consent="tracking" src="tracking-performance.js">
+<script type="text/plain" cookie-consent="tracking">
 console.log("i'm a tracking script");
 </script>
 ```
@@ -51,8 +51,8 @@ Requirements::javascript('myscript',['cookieconsent' => 'tracking'])
 
 ## For php cookies
 
-If you set cookies on the serverside, you can check the CookieConsent::isAllowed method or use the
-CookieConsent::setCookie helper.
+If you set cookies on the serverside, you can check the `CookieConsent::isAllowed` method or use the
+`CookieConsent::setCookie` helper.
 
 ## Options
 
