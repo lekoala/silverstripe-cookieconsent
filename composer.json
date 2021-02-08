@@ -19,7 +19,7 @@
     "require": {
         "php": ">=7.2",
         "silverstripe/framework": "^4",
-        "lekoala/defer-backend": "*"
+        "lekoala/silverstripe-defer-backend": "^1.1"
     },
     "require-dev": {
         "sminnee/phpunit": "^5.7",
