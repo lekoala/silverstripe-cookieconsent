@@ -13,7 +13,7 @@ NOTE: even if it has the same name (and the same version number!!), it is NOT th
 
 ## How it works
 
-When you require your scripts, you should add their type in order to load them according to use preference:
+When you require your scripts, you should add their type in order to load them according to user preference:
 
 The four types are :
 - strictly-necessary
@@ -21,8 +21,8 @@ The four types are :
 - tracking
 - targeting
 
-And they will be rendered in something like this. Please note the text/plan type that prevents the script for being executed.
-This is what you should do if you include script manually.
+And they will be rendered in something like this. Please note the text/plain type that prevents the script for being executed.
+This is what you should do if you include your scripts manually.
 
 ```html
 <script type="text/plain" cookie-consent="strictly-necessary" src="strict.js">
@@ -31,9 +31,23 @@ This is what you should do if you include script manually.
 <script type="text/plain" cookie-consent="targeting" src="targeting-advertising.js">
 ```
 
+or for inline scripts
+
+```html
+<script type="text/plain" cookie-consent="tracking" src="tracking-performance.js">
+console.log("i'm a tracking script");
+</script>
+```
+
 If you use the Requirements api, in order to specify this extra attribute,
 you need a `Requirements_Backend` that supports it.
 This is delegated to my [defer backend module](https://github.com/lekoala/silverstripe-defer-backend).
+
+This is how you would add a tracking script with the updated requirements api
+
+```php
+Requirements::javascript('myscript',['cookieconsent' => 'tracking'])
+```
 
 ## For php cookies
 

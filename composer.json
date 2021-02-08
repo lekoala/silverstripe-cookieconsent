@@ -18,8 +18,10 @@
     ],
     "require": {
         "php": ">=7.2",
-        "silverstripe/framework": "^4",
-        "lekoala/silverstripe-defer-backend": "^1.1"
+        "silverstripe/framework": "^4"
+    },
+    "suggest": {
+        "lekoala/silverstripe-defer-backend": "use requirements api"
     },
     "require-dev": {
         "sminnee/phpunit": "^5.7",
