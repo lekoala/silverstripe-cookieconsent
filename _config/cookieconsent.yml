@@ -14,4 +14,8 @@ LeKoala\CookieConsent\CookieConsent:
     # light, dark
     palette: "dark"
     # the selector for a link or button to open back the settings
-    change_preferences_selector: "#cookieconsent-preferences"
+    open_preferences_center_selector: "#cookieconsent-preferences"
+    notice_banner_reject_button_hide: false
+    preferences_center_close_button_hide: false
+    page_load_consent_levels:
+      - "strictly-necessary"

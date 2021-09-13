@@ -77,16 +77,16 @@ class CookieConsent
                 $privacyLink = $privacyNotice->Link();
             }
         }
-        $opts['cookies_policy_url'] = $privacyLink;
+        $opts['website_privacy_policy_url'] = $privacyLink;
 
         $jsonOpts = json_encode($opts);
 
         // Include script
         $use_cdn = self::config()->use_cdn;
         if ($use_cdn) {
-            Requirements::javascript("//www.cookieconsent.com/releases/3.1.0/cookie-consent.js");
+            Requirements::javascript("//www.cookieconsent.com/releases/4.0.0/cookie-consent.js");
         } else {
-            Requirements::javascript("lekoala/silverstripe-cookieconsent:javascript/cookie-consent-3.1.0.min.js");
+            Requirements::javascript("lekoala/silverstripe-cookieconsent:javascript/cookie-consent.js");
         }
 
         // Include custom init
