@@ -17,15 +17,16 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
-        "silverstripe/framework": "^4"
+        "php": "^7.4 || ^8",
+        "silverstripe/recipe-plugin": "^1 || ^2",
+        "silverstripe/recipe-core": "^4.4 || ^5"
     },
     "suggest": {
         "lekoala/silverstripe-defer-backend": "use requirements api"
     },
     "require-dev": {
-        "sminnee/phpunit": "^5.7",
-        "squizlabs/php_codesniffer": "^3.0"
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.5"
     },
     "extra": {
         "installer-name": "cookieconsent",
